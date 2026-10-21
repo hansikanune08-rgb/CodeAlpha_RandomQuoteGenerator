@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f5efff, #fff8ef);
+    color: #292b35;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    width: 100%;
+    max-width: 620px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #6b58c8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 7vw, 55px);
+    margin: 18px 0 12px;
+}
+
+h1 span {
+    color: #6b58c8;
+    font-style: italic;
+}
+
+.subtitle {
+    color: #777887;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.quote-card {
+    padding: 32px 25px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 18px 55px #39304d15;
+}
+
+.quote-mark {
+    color: #c8baf8;
+    font-family: Georgia, serif;
+    font-size: 75px;
+    line-height: 1;
+}
+
+#quote-text {
+    font-family: Georgia, serif;
+    font-size: clamp(22px, 4vw, 30px);
+    line-height: 1.5;
+}
+
+.divider {
+    width: 45px;
+    height: 3px;
+    margin: 24px auto;
+    background: #c8baf8;
+    border-radius: 5px;
+}
+
+#quote-author {
+    color: #6b58c8;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+button {
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#new-quote {
+    background: #6b58c8;
+    color: white;
+}
+
+#copy-quote {
+    background: white;
+    color: #292b35;
+    border: 1px solid #e5e0ef;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid #b7a7fa;
+    outline-offset: 3px;
+}
+
+#status {
+    min-height: 20px;
+    color: #6b58c8;
+    font-size: 13px;
+}
+
+footer {
+    margin-top: 24px;
+    color: #777887;
+    font-size: 12px;
+}
+
+@media (max-width: 450px) {
+    .actions {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
